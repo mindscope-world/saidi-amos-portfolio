@@ -35,7 +35,7 @@ const ContactSection = ({ isActive }: ContactSectionProps) => {
     { icon: Linkedin, url: "#", label: "LinkedIn" },
     { icon: Github, url: "#", label: "GitHub" },
     { icon: Twitter, url: "#", label: "Twitter" },
-    { icon: Mail, url: "mailto:amos.saidi@example.com", label: "Email" },
+    { icon: Mail, url: "mailto:amossaidi03@gmail.com", label: "Email" },
   ];
 
   return (
@@ -91,10 +91,10 @@ const ContactSection = ({ isActive }: ContactSectionProps) => {
                   <div>
                     <p className="font-semibold">Email</p>
                     <a
-                      href="mailto:amos.saidi@example.com"
+                      href="mailto:amossaidi03@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      amos.saidi@example.com
+                      amossaidi03@gmail.com
                     </a>
                   </div>
                 </div>
@@ -105,10 +105,10 @@ const ContactSection = ({ isActive }: ContactSectionProps) => {
                   <div>
                     <p className="font-semibold">Phone</p>
                     <a
-                      href="tel:+254700000000"
+                      href="tel:+254759236384"
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
-                      +254 700 000 000
+                      +254 759 236384
                     </a>
                   </div>
                 </div>

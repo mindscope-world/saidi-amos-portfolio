@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import profilePhoto from "@/assets/profile-photo.jpeg";
 
 interface HomeSectionProps {
   isActive: boolean;
@@ -74,9 +75,9 @@ const HomeSection = ({ isActive }: HomeSectionProps) => {
               I'm a <span ref={typingRef} className="border-r-2 border-primary"></span>
             </div>
             <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              Passionate about cybersecurity with expertise in threat detection, vulnerability assessment, 
-              and incident response. I help organizations strengthen their security posture through 
-              comprehensive analysis and proactive defense strategies.
+              Dedicated cybersecurity professional passionate about protecting digital assets and ensuring robust security postures. 
+              With expertise in security operations and penetration testing, I combine technical skills with business understanding 
+              to implement practical security solutions that safeguard organizations from evolving cyber threats.
             </p>
             <div className="flex flex-wrap gap-4 pt-4">
               <Button
@@ -104,7 +105,7 @@ const HomeSection = ({ isActive }: HomeSectionProps) => {
               <div className="relative rounded-lg overflow-hidden shadow-elegant bg-gradient-to-br from-primary/10 to-purple-500/10 p-1">
                 <div className="bg-card rounded-lg overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop"
+                    src={profilePhoto}
                     alt="Amos Saidi"
                     className="w-full h-[400px] object-cover"
                   />

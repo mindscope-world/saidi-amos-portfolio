@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { cn } from "@/lib/utils";
-import { Shield, Search, Lock, AlertTriangle, FileSearch, Users } from "lucide-react";
+import { Shield, Target, Eye } from "lucide-react";
 
 interface ServicesSectionProps {
   isActive: boolean;
@@ -11,40 +11,19 @@ const ServicesSection = ({ isActive }: ServicesSectionProps) => {
 
   const services = [
     {
-      icon: Shield,
-      title: "Security Operations",
-      description:
-        "24/7 security monitoring and threat detection using advanced SIEM tools and threat intelligence platforms.",
-    },
-    {
-      icon: Search,
-      title: "Penetration Testing",
-      description:
-        "Comprehensive security assessments to identify vulnerabilities before attackers can exploit them.",
-    },
-    {
-      icon: Lock,
+      icon: Target,
       title: "Vulnerability Assessment",
-      description:
-        "Systematic identification and classification of security weaknesses in your infrastructure.",
+      description: "Comprehensive system scanning and threat identification to discover security weaknesses before attackers do. Detailed reporting with actionable remediation strategies.",
     },
     {
-      icon: AlertTriangle,
-      title: "Incident Response",
-      description:
-        "Rapid response to security incidents with forensic analysis and recovery procedures.",
+      icon: Shield,
+      title: "Penetration Testing",
+      description: "Ethical hacking services to test your security controls and identify exploitable vulnerabilities. Real-world attack simulations to strengthen your defenses.",
     },
     {
-      icon: FileSearch,
-      title: "Security Audits",
-      description:
-        "Detailed compliance audits ensuring adherence to industry standards like ISO 27001 and NIST.",
-    },
-    {
-      icon: Users,
-      title: "Security Training",
-      description:
-        "Employee awareness programs and technical training to build a security-conscious culture.",
+      icon: Eye,
+      title: "Security Monitoring",
+      description: "24/7 network and application monitoring using advanced SIEM solutions. Real-time threat detection, incident response, and continuous security operations.",
     },
   ];
 
@@ -65,39 +44,24 @@ const ServicesSection = ({ isActive }: ServicesSectionProps) => {
             <span className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-12 h-1 bg-primary"></span>
           </h2>
           <p className="mt-6 text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive cybersecurity services tailored to protect your organization
+            Comprehensive cybersecurity solutions to protect your digital assets and ensure business continuity
           </p>
         </div>
 
         {/* Services Grid */}
-        <div
-          className={cn(
-            "grid md:grid-cols-2 lg:grid-cols-3 gap-8",
-            inView && "animate-fade-in"
-          )}
-        >
+        <div className={cn("grid md:grid-cols-3 gap-8", inView && "animate-fade-in")}>
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
               <div
                 key={index}
-                className="group bg-card border border-border rounded-xl p-8 shadow-md hover:shadow-elegant transition-all duration-300 hover:-translate-y-2"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="bg-card border border-border rounded-xl p-8 shadow-md hover:shadow-elegant transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="flex justify-center mb-6">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center bg-accent transition-all duration-300 group-hover:bg-primary">
-                    <Icon
-                      size={32}
-                      className="text-primary transition-all duration-300 group-hover:text-white"
-                    />
-                  </div>
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                  <Icon size={32} className="text-primary" />
                 </div>
-                <h3 className="text-xl font-bold text-center mb-4 text-foreground">
-                  {service.title}
-                </h3>
-                <p className="text-center text-muted-foreground leading-relaxed">
-                  {service.description}
-                </p>
+                <h3 className="text-xl font-bold mb-4 text-foreground">{service.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{service.description}</p>
               </div>
             );
           })}

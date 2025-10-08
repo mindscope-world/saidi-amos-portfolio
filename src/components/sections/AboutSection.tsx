@@ -38,27 +38,26 @@ const AboutSection = ({ isActive }: AboutSectionProps) => {
               I'm Amos Saidi, <span className="text-primary">Cybersecurity Specialist</span>
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-4">
-              With extensive experience in cybersecurity operations and threat analysis, I specialize in 
-              identifying vulnerabilities, responding to security incidents, and implementing robust defense mechanisms. 
-              My passion lies in staying ahead of emerging threats and protecting organizational assets from cyber attacks.
+              Dedicated cybersecurity professional passionate about protecting digital assets and ensuring robust security postures. 
+              I specialize in SOC monitoring, penetration testing, vulnerability assessment, incident response, and security awareness training.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Throughout my career, I've successfully managed security operations, conducted penetration testing, 
-              and developed comprehensive security strategies for various organizations.
+              I combine technical skills with business understanding to implement practical security solutions that safeguard 
+              organizations from evolving cyber threats. My approach integrates proactive defense strategies with real-world threat intelligence.
             </p>
 
             <div className="mt-8">
               <h4 className="text-lg font-semibold mb-4">Areas of Expertise:</h4>
               <ul className="grid md:grid-cols-2 gap-3">
                 {[
-                  "Network Security & Monitoring",
-                  "Threat Intelligence & Analysis",
+                  "SOC Monitoring & Operations",
                   "Penetration Testing & Ethical Hacking",
+                  "Vulnerability Assessment & Management",
                   "Incident Response & Forensics",
-                  "Security Compliance (ISO 27001, NIST)",
-                  "SIEM Tools (Splunk, QRadar, ELK)",
-                  "Vulnerability Assessment",
+                  "Threat Intelligence & Analysis",
                   "Security Awareness Training",
+                  "SIEM Tools (Splunk, QRadar)",
+                  "Network Security & Hardening",
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-2 text-muted-foreground">
                     <span className="w-2 h-2 bg-primary rounded-full"></span>
@@ -75,9 +74,9 @@ const AboutSection = ({ isActive }: AboutSectionProps) => {
             <div className="grid md:grid-cols-2 gap-x-8 gap-y-4">
               {[
                 { label: "Name:", value: "Amos Saidi" },
-                { label: "Age:", value: "28 Years" },
-                { label: "Email:", value: "amos.saidi@example.com" },
-                { label: "Phone:", value: "+254 700 000 000" },
+                { label: "Degree:", value: "BSc in IT" },
+                { label: "Email:", value: "amossaidi03@gmail.com" },
+                { label: "Phone:", value: "+254 759 236384" },
                 { label: "Location:", value: "Nairobi, Kenya" },
                 { label: "Languages:", value: "English, Swahili" },
                 { label: "Availability:", value: "Open to Opportunities" },
@@ -103,16 +102,16 @@ const AboutSection = ({ isActive }: AboutSectionProps) => {
               <div className="space-y-6">
                 {[
                   {
-                    title: "BSc in Computer Science",
-                    period: "2015 - 2019",
-                    institution: "University of Nairobi",
-                    description: "Specialized in cybersecurity and network administration",
+                    title: "BSc in Information Technology",
+                    period: "2018 - 2022",
+                    institution: "Masinde Muliro University of Science and Technology (MMUST)",
+                    description: "Comprehensive foundation in IT systems and security principles",
                   },
                   {
                     title: "Cybersecurity Bootcamp",
-                    period: "2019",
-                    institution: "Cyber Academy",
-                    description: "Intensive training in ethical hacking and penetration testing",
+                    period: "2025 - Present",
+                    institution: "Moringa School",
+                    description: "Advanced training in ethical hacking, penetration testing, and security operations",
                   },
                 ].map((item, i) => (
                   <div key={i} className="relative pl-8 pb-6 border-l-2 border-primary last:border-l-0 last:pb-0">
@@ -135,16 +134,16 @@ const AboutSection = ({ isActive }: AboutSectionProps) => {
               <div className="space-y-6">
                 {[
                   {
-                    title: "Senior SOC Analyst",
-                    period: "2021 - Present",
-                    company: "SecureNet Solutions",
-                    description: "Leading security operations and incident response team",
+                    title: "SOC Analyst & Penetration Tester",
+                    period: "2022 - Present",
+                    company: "Freelance / Contract Work",
+                    description: "Security operations, threat detection, penetration testing, and vulnerability assessments for various organizations",
                   },
                   {
-                    title: "Penetration Tester",
-                    period: "2019 - 2021",
-                    company: "CyberDefense Inc.",
-                    description: "Conducted security assessments and vulnerability testing",
+                    title: "IT Security Specialist",
+                    period: "2020 - 2022",
+                    company: "Various Organizations",
+                    description: "Network security, system hardening, and security awareness training",
                   },
                 ].map((item, i) => (
                   <div key={i} className="relative pl-8 pb-6 border-l-2 border-primary last:border-l-0 last:pb-0">
